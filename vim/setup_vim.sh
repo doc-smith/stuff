@@ -30,3 +30,6 @@ cd ~/.vim/bundle
 git clone git://github.com/altercation/vim-colors-solarized.git
 
 # checkout .vimrc
+
+curl -Sso ~/.vimrc \
+    https://github.com/DrSmithization/staff/raw/master/vim/.vimrc
