@@ -12,11 +12,12 @@ for filename in ~/.vimrc ~/.vim; do
     fi
 done
 
-#rm -rf ~/.vim
-#rm ~/.vimrc
+rm -rf ~/.vim
+rm ~/.vimrc
 
 mkdir -p ~/.vim/autoload
 mkdir -p ~/.vim/bundle
+mkdir -p ~/.vim/backup
 
 # checkout pathogen
 
@@ -28,6 +29,13 @@ curl -Sso ~/.vim/autoload/pathogen.vim \
 cd ~/.vim/bundle
 
 git clone git://github.com/altercation/vim-colors-solarized.git
+git clone git://github.com/mileszs/ack.vim.git
+git clone git://github.com/msanders/snipmate.vim.git
+git clone git://github.com/vim-scripts/pep8.git
+git clone git://github.com/scrooloose/syntastic.git
+git clone git://github.com/fs111/pydoc.vim.git
+git clone git://github.com/Rip-Rip/clang_complete.git
+git clone git://github.com/scrooloose/nerdtree.git
 
 # checkout .vimrc
 
