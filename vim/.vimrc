@@ -67,8 +67,19 @@ autocmd vimenter * if !argc() | NERDTree | endif
 
 " functions
 "
-fun! CurTime()
-    let ftime=""
-    let ftime=ftime." ".strftime("%H:%M:%S")
-    return ftime
+function! CurTime()
+ruby << EOF
+    VIM::command("return '#{Time.now.strftime("%I:%M%p")}'")
+EOF
+endfunction
+
+" random ui32
+function! RandomHex()
+ruby << EOF
+    @buffer = VIM::Buffer.current
+    line = VIM::Buffer.current.line_number
+    @buffer.append(line, "0x%08x" % (rand * 0xffffffff))
+EOF
 endf
+
+nmap <leader>rnd <Esc>:call RandomHex()<return>

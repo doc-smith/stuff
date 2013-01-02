@@ -36,6 +36,7 @@ git clone git://github.com/scrooloose/syntastic.git
 git clone git://github.com/fs111/pydoc.vim.git
 git clone git://github.com/Rip-Rip/clang_complete.git
 git clone git://github.com/scrooloose/nerdtree.git
+git clone git://github.com/vim-scripts/a.vim.git
 
 # checkout .vimrc
 
