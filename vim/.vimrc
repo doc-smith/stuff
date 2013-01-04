@@ -62,6 +62,9 @@ nmap <leader>a <Esc>:Ack<space>
 autocmd vimenter * if !argc() | NERDTree | endif
 nmap <leader>nt :NERDTree<return>
 
+" clang complete
+let g:clang_close_preview = 1
+
 " functions
 "
 function! CurTime()
