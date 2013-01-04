@@ -33,7 +33,6 @@ git clone git://github.com/klen/python-mode.git
 git clone git://github.com/mileszs/ack.vim.git
 git clone git://github.com/msanders/snipmate.vim.git
 git clone git://github.com/scrooloose/nerdtree.git
-git clone git://github.com/scrooloose/syntastic.git
 git clone git://github.com/vim-scripts/a.vim.git
 
 # checkout .vimrc
