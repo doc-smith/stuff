@@ -14,6 +14,8 @@ set nocompatible
 set number
 set history=1000
 
+set hidden
+
 set backspace=indent,eol,start
 set linespace=0
 set tabstop=4
@@ -50,20 +52,15 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-let g:SuperTabDefaultCompletionType = "context"
-
 " plugins
 "
-
-" pep8
-let g:pep8_map='<leader>8'
 
 " vim ack
 nmap <leader>a <Esc>:Ack<space>
 
 " nerdtree
 autocmd vimenter * if !argc() | NERDTree | endif
+nmap <leader>nt :NERDTree<return>
 
 " functions
 "
