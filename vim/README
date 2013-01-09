@@ -3,7 +3,7 @@ Instruction:
 download setup script:
 
     curl -Sso setup_vim.sh \
-        https://github.com/DrSmithization/staff/raw/master/vim/setup_vim.sh
+        https://raw.github.com/DrSmithization/staff/master/vim/setup_vim.sh
     chmod +x setup_vim.sh
 
 and run:
