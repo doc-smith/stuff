@@ -9,6 +9,7 @@ syntax on
 set background=dark
 colorscheme solarized
 filetype plugin indent on
+autocmd BufRead *.sql set filetype=mysql
 
 set nocompatible
 set number
