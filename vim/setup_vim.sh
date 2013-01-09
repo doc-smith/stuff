@@ -38,4 +38,4 @@ git clone git://github.com/vim-scripts/a.vim.git
 # checkout .vimrc
 
 curl -Sso ~/.vimrc \
-    https://github.com/DrSmithization/staff/raw/master/vim/.vimrc
+    https://raw.github.com/DrSmithization/staff/master/vim/.vimrc
