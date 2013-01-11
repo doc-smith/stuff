@@ -47,7 +47,6 @@ def game(change_strategy):
         return doors.check_another_door()
     else:
         return doors.check_door()
-    return is_winner
 
 
 def check_strategy(n, change_strategy):
