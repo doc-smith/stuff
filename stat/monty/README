@@ -1,0 +1,30 @@
+This program that simulates the Monty Hall problem and use it to estimate the
+probability of winning if you stick and if you switch.
+
+Result:
+    change strategy: False
+    n: 100
+    result: 0.36
+    change strategy: False
+    n: 1000
+    result: 0.344
+    change strategy: False
+    n: 10000
+    result: 0.3284
+    change strategy: False
+    n: 1000000
+    result: 0.33296
+    change strategy: True
+    n: 100
+    result: 0.68
+    change strategy: True
+    n: 1000
+    result: 0.677
+    change strategy: True
+    n: 10000
+    result: 0.6652
+    change strategy: True
+    n: 1000000
+    result: 0.667372
+
+See http://wikipedia.org/wiki/Monty_Hall_problem
