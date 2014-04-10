@@ -27,9 +27,7 @@ curl -Sso ~/.vim/autoload/pathogen.vim \
 
 cd ~/.vim/bundle
 
-git clone git://github.com/Rip-Rip/clang_complete.git
 git clone git://github.com/altercation/vim-colors-solarized.git
-git clone git://github.com/klen/python-mode.git
 git clone git://github.com/mileszs/ack.vim.git
 git clone git://github.com/msanders/snipmate.vim.git
 git clone git://github.com/scrooloose/nerdtree.git

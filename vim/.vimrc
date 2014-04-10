@@ -41,7 +41,6 @@ set foldlevel=99
 
 set laststatus=2
 set noruler
-set statusline=%<%{CurTime()}\ %1*%f%*\ %l,%c\ %P
 hi User1 term=inverse,bold cterm=inverse,bold ctermfg=red
 
 abbreviate #i #include
@@ -62,30 +61,3 @@ nmap <leader>a <Esc>:Ack<space>
 " nerdtree
 autocmd vimenter * if !argc() | NERDTree | endif
 nmap <leader>nt :NERDTree<return>
-
-" clang complete
-let g:clang_close_preview = 1
-
-" functions
-"
-function! CurTime()
-python << EOF
-import datetime
-import vim
-
-time_str = datetime.datetime.now().strftime("%I:%M%p")
-vim.command("return '{0}'".format(time_str))
-EOF
-endfunction
-
-" FIXME: ruby -> python
-" random ui32
-" function! RandomHex()
-" ruby << EOF
-"    @buffer = VIM::Buffer.current
-"    line = VIM::Buffer.current.line_number
-"    @buffer.append(line, "0x%08x" % (rand * 0xffffffff))
-" EOF
-" endf
-
-nmap <leader>rnd <Esc>:call RandomHex()<return>
